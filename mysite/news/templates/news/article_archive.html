@@ -5,8 +5,9 @@
 {% block content %}
 <h1>A list of Articles</h1>
 
+<ul>
 {% for article in article_list %}
-    <p>{{ article.headline }}</p>
-    <hr>
+    <li><p>{{ article.headline }}</p></li>
 {% endfor %}
+</ul>
 {% endblock %}
