@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}A list of Articles {% endblock %}
+
+{% block content %}
+<h1>A list of Articles</h1>
+
+{% for article in article_list %}
+    <p>{{ article.headline }}</p>
+    <hr>
+{% endfor %}
+{% endblock %}
