@@ -7,7 +7,9 @@
 
 <ul>
 {% for article in article_list %}
-    <li><p>{{ article.headline }}</p></li>
+    <a href="{% url 'news:year' article.pub_date|date:"Y" %}">{{ article.pub_date|date:"Y" }}</a>
+    <p>{{ article.headline }}</p></li>
 {% endfor %}
 </ul>
+
 {% endblock %}
