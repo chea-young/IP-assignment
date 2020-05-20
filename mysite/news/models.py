@@ -1,5 +1,7 @@
 import datetime
 from django.db import models
+from django.utils import timezone
+
 
 class Reporter(models.Model):
     full_name = models.CharField(max_length=70)
@@ -15,3 +17,7 @@ class Article(models.Model):
 
     def __str__(self):
         return self.headline
+
+    def was_published_recently(self):
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.pub_date <= now
