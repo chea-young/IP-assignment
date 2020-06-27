@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function buzzer_on_off(bu) {
+  var buzzer;
+  if (bu == 0) {
+    buzzer = "ass12_buzzer_off.png"
+  } else {
+    buzzer = "ass12_buzzer_on.png"
+  }
+  document.getElementById('buzzerImage').src = buzzer;
+}
+</script>
+
+<img id="buzzerImage" src="ass12_buzzer_off.png" width="150" height="150">
+
+<p>
+<button type="button" onclick="buzzer_on_off(1)">Buzzer on</button>
+<button type="button" onclick="buzzer_on_off(0)">Buzzer off</button>
+</p>
+
+</body>
+</html>
