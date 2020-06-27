@@ -1,0 +1,22 @@
+body{
+    background-color: #DDDDDD;
+}
+h1{
+    color: navy;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0 45px; 
+    font-family: 'Bree Serif', serif;
+    padding:0;
+    display: none;
+    
+}
+
+h1:hover{
+    background:url('ex1_myname_img.jpg')no-repeat;
+    background-position: 0 150px;
+    height: 600px; 
+    display: block;
+}
+
+  

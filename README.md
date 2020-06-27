@@ -3,9 +3,17 @@
 ### 인터넷 응용 과제
 
 #### ./try_django
-##### - PA-8 First Django App: polls (part 1 - 7) + news app (5/20)
+    #### - PA-8 First Django App: polls (part 1 - 7) + news app (5/20)
+#### ./html 실습
+    #### - PA-7 Client-side Web Programming: HTML, CSS, JavaScript (5/16)
+#### ex-8_set.py
+    #### - Ex-8. Set class에 methods 추가와 git 활용 (4/23)
+
 
 ### 인터넷 응용 수업 필기
 
 #### ./lecture
-##### - 12,13주차 수업 필기
+#### - ./socket
+    #### - 12,13주차 수업 필기
+#### - ./todo 실습
+    #### - html. js 수업 실습
