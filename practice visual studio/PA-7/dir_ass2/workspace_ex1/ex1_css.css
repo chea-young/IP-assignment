@@ -1,0 +1,27 @@
+body{
+    background-color: #DDDDDD;
+}
+hr{
+    height: 5px;
+    background-color: navy;
+    font-family: 'Bree Serif', serif;
+}
+.myname{
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+span{
+    color: navy;
+	font-size: 35px;
+	margin: 15px 0 45px; 
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    display: block
+}
+span:hover + .myname{
+    display: block;
+}
+
+
+  

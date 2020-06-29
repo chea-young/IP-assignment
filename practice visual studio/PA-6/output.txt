@@ -1,0 +1,76 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- C:\Users\w1004\anaconda3\python.exe
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('C:\\Users\\w1004\\Documents\\GitHub\\myproject\\.hypothesis\\examples')
+rootdir: C:\Users\w1004\Documents\GitHub\myproject
+plugins: hypothesis-5.5.4, arraydiff-0.3, astropy-header-0.1.2, cov-2.8.1, doctestplus-0.5.0, openfiles-0.4.0, remotedata-0.3.2
+collecting ... collected 56 items
+
+test_card.py::test_PKCard_init PASSED                                    [  1%]
+test_card.py::test_PKCard_init_exception PASSED                          [  3%]
+test_card.py::test_PKCard_repr PASSED                                    [  5%]
+test_card.py::test_PKCard_value PASSED                                   [  7%]
+test_card.py::test_PKCard_com PASSED                                     [  8%]
+test_card.py::test_PKCard_sort PASSED                                    [ 10%]
+test_card.py::test_Deck_init PASSED                                      [ 12%]
+test_card.py::test_Deck_pop PASSED                                       [ 14%]
+test_card.py::test_Deck_str PASSED                                       [ 16%]
+test_card.py::test_Deck_len PASSED                                       [ 17%]
+test_card.py::test_Deck_getitem PASSED                                   [ 19%]
+test_pocker.py::test_is_straight_flush[faces0-Ranking.STRAIGHT_FLUSH] PASSED [ 21%]
+test_pocker.py::test_is_straight_flush[faces1-Ranking.STRAIGHT_FLUSH] PASSED [ 23%]
+test_pocker.py::test_is_straight[faces0-Ranking.STRAIGHT] PASSED         [ 25%]
+test_pocker.py::test_is_straight[faces1-Ranking.STRAIGHT] PASSED         [ 26%]
+test_pocker.py::test_is_straight[faces2-Ranking.STRAIGHT] PASSED         [ 28%]
+test_pocker.py::test_is_flush[faces0-Ranking.FLUSH] PASSED               [ 30%]
+test_pocker.py::test_is_flush[faces1-Ranking.FLUSH] PASSED               [ 32%]
+test_pocker.py::test_is_find_a_kind[faces0-Ranking.FOUR_OF_A_KIND] PASSED [ 33%]
+test_pocker.py::test_is_find_a_kind[faces1-Ranking.FOUR_OF_A_KIND] PASSED [ 35%]
+test_pocker.py::test_is_find_a_kind[faces2-Ranking.FOUR_OF_A_KIND] PASSED [ 37%]
+test_pocker.py::test_is_find_a_kind[faces3-Ranking.THREE_OF_A_KIND] PASSED [ 39%]
+test_pocker.py::test_is_find_a_kind[faces4-Ranking.THREE_OF_A_KIND] PASSED [ 41%]
+test_pocker.py::test_is_find_a_kind[faces5-Ranking.TWO_PAIR] PASSED      [ 42%]
+test_pocker.py::test_is_find_a_kind[faces6-Ranking.TWO_PAIR] PASSED      [ 44%]
+test_pocker.py::test_is_find_a_kind[faces7-Ranking.TWO_PAIR] PASSED      [ 46%]
+test_pocker.py::test_is_find_a_kind[faces8-Ranking.ONE_PAIR] PASSED      [ 48%]
+test_pocker.py::test_is_find_a_kind[faces9-Ranking.ONE_PAIR] PASSED      [ 50%]
+test_pocker.py::test_is_find_a_kind[faces10-Ranking.ONE_PAIR] PASSED     [ 51%]
+test_pocker.py::test_find_a_kind_None[faces0-Ranking.HIGH_CARD] PASSED   [ 53%]
+test_pocker.py::test_find_a_kind_None[faces1-Ranking.HIGH_CARD] PASSED   [ 55%]
+test_pocker.py::test_find_a_kind_None[faces2-Ranking.HIGH_CARD] PASSED   [ 57%]
+test_pocker.py::test_eval[faces0-Ranking.STRAIGHT_FLUSH] PASSED          [ 58%]
+test_pocker.py::test_eval[faces1-Ranking.STRAIGHT_FLUSH] PASSED          [ 60%]
+test_pocker.py::test_eval[faces2-Ranking.FOUR_OF_A_KIND] PASSED          [ 62%]
+test_pocker.py::test_eval[faces3-Ranking.FOUR_OF_A_KIND] PASSED          [ 64%]
+test_pocker.py::test_eval[faces4-Ranking.FOUR_OF_A_KIND] PASSED          [ 66%]
+test_pocker.py::test_eval[faces5-Ranking.FULL_HOUSE] PASSED              [ 67%]
+test_pocker.py::test_eval[faces6-Ranking.FULL_HOUSE] PASSED              [ 69%]
+test_pocker.py::test_eval[faces7-Ranking.FLUSH] PASSED                   [ 71%]
+test_pocker.py::test_eval[faces8-Ranking.FLUSH] PASSED                   [ 73%]
+test_pocker.py::test_eval[faces9-Ranking.STRAIGHT] PASSED                [ 75%]
+test_pocker.py::test_eval[faces10-Ranking.STRAIGHT] PASSED               [ 76%]
+test_pocker.py::test_eval[faces11-Ranking.STRAIGHT] PASSED               [ 78%]
+test_pocker.py::test_eval[faces12-Ranking.THREE_OF_A_KIND] PASSED        [ 80%]
+test_pocker.py::test_eval[faces13-Ranking.THREE_OF_A_KIND] PASSED        [ 82%]
+test_pocker.py::test_eval[faces14-Ranking.TWO_PAIR] PASSED               [ 83%]
+test_pocker.py::test_eval[faces15-Ranking.TWO_PAIR] PASSED               [ 85%]
+test_pocker.py::test_eval[faces16-Ranking.TWO_PAIR] PASSED               [ 87%]
+test_pocker.py::test_eval[faces17-Ranking.ONE_PAIR] PASSED               [ 89%]
+test_pocker.py::test_eval[faces18-Ranking.ONE_PAIR] PASSED               [ 91%]
+test_pocker.py::test_eval[faces19-Ranking.ONE_PAIR] PASSED               [ 92%]
+test_pocker.py::test_eval[faces20-Ranking.HIGH_CARD] PASSED              [ 94%]
+test_pocker.py::test_eval[faces21-Ranking.HIGH_CARD] PASSED              [ 96%]
+test_pocker.py::test_eval[faces22-Ranking.HIGH_CARD] PASSED              [ 98%]
+test_pocker.py::test_who_wins PASSED                                     [100%]
+
+----------- coverage: platform win32, python 3.7.6-final-0 -----------
+Name             Stmts   Miss  Cover
+------------------------------------
+pocker.py          160      5    97%
+test_card.py        51      0   100%
+test_pocker.py      62      0   100%
+------------------------------------
+TOTAL              273      5    98%
+
+
+============================= 56 passed in 0.33s ==============================
