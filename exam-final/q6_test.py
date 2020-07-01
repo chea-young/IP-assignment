@@ -21,8 +21,7 @@ def most_frequent_days(year):
         start_day = 5
     elif(m_day%7==0):
         start_day = 6
-
-    print(start_day)
+    #print(start_day)
     now_year = 365
     if(year %4 ==0):
         now_year = 366
@@ -48,8 +47,7 @@ def most_frequent_days(year):
         if(start_day+1 > 6):
             start_day = -1
         day_name.append(day[start_day+1])
-
-    return day_name
+    return sorted(day_name)
 
 if __name__ == '__main__':
     print(most_frequent_days(2427))
