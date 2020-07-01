@@ -1,39 +1,38 @@
 def sequence_gen(*a):
     count = 0
     num = list(a)
-    add_list = [num[0],num[1],0]
+
+    answer = []
+    for i in range(len(num)):
+        answer.append(num[i])
+    
     data = 0
     while(True):
-        for i in range(len(num)):
-            count += 1
-            data = num[count-1]
-            yield data
+        while(count == 0):
+            for i in range(len(num)):
+                count += 1
+                data = num[count-1]
+                yield data
 
-        if(len(num)>2):
-            add_list[0] = add_list[1]
-            add_list[1] = num[count]
-            count +=1
-            data = add_list[0] + add_list[1]
-            add_list[2] = data
-            yield data
+        data = sum(answer)
+        answer = change_list(answer, data,len(num))
+        yield data
 
-        else:
-            add_list[0] = add_list[1]
-            add_list[1] = add_list[2]
-            data = add_list[0] + add_list[1]
-            add_list[2] = data
-            yield data
+def change_list(list1, c_num,len):
+    for i in range(len-1):
+        list1[i] = list1[i+1]
+    list1[len-1] = c_num
+    return list1
 
 if __name__ == '__main__':
-    fib = sequence_gen(0,1)
-    print(next(fib))
-    print(next(fib))
-    print(next(fib))
-    print(next(fib))
-    print(next(fib))
-    print(next(fib))
-    print(next(fib))
-
+    pointless = sequence_gen(1)
+    print(next(pointless))
+    print(next(pointless))
+    print(next(pointless))
+    print(next(pointless))
+    print(next(pointless))
+    print(next(pointless))
+ 
 
 def test_fib():
     fib = sequence_gen(0,1)
@@ -85,4 +84,4 @@ def test_lucas():
 
 def test_pointless():
     pointless = sequence_gen(1)
-    assert [pointless.next() for _ in range(1000)] == [1] * 1000
+    assert [next(pointless) for _ in range(1000)] == [1] * 1000
